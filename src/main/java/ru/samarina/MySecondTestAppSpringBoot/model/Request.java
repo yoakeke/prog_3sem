@@ -20,19 +20,24 @@ public class Request {
     @Size(max = 32)
     private String uid;
 
-    @NotBlank
-    @Size(max = 32)
+
     private String operationUid;
-    private Systems systemName;
-    @NotBlank
+
+    private String systemName;
+
+
     private String systemTime;
+
     private String source;
 
-    @Min(1)
     @Max(100000)
+    @Min(1)
     private int communicationId;
+
     private int templateId;
+
     private int productCode;
+
     private int smsCode;
 
     @Override

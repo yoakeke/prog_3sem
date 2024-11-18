@@ -1,8 +1,10 @@
 package ru.samarina.MySecondTestAppSpringBoot.model;
 
+
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum Systems {
+
     ERP("Enterprise Resource Planning"),
     CRM("Customer Relationship Management"),
     WMS("Warehouse Management System");

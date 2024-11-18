@@ -10,7 +10,8 @@ import java.util.Objects;
 public class RequestValidationService implements ValidationService {
 
     @Override
-    public void isValid(BindingResult bindingResult) throws ValidationFailedException, UnsupportedCodeException {
+    public void isValid(BindingResult bindingResult)
+            throws ValidationFailedException, UnsupportedCodeException {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult.getFieldError().toString());
         }
